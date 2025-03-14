@@ -28,21 +28,26 @@ selected_columns = [
 sequence_length = 10
 
 # Set up background image
+import base64
+import streamlit as st
+
 def set_bg_image(image_path):
+    """Set background image in Streamlit app."""
     with open(image_path, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read()).decode()
     page_bg_img = f"""
     <style>
     .stApp {{
-        background-image: url(data:image/png;base64,{encoded_string});
+        background-image: url("data:image/png;base64,{encoded_string}");
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
     }}
     </style>
     """
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-set_background_image_local(r"12.png")
+set_bg_image_local(r"12.png")
 
 
 
