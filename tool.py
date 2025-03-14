@@ -8,12 +8,14 @@ import pickle
 import base64
 from tensorflow.keras.models import load_model
 import pandas as pd
+import tensorflow as tf
+from tensorflow.keras.models import load_model
 
 # Load trained LSTM model and scaler
 MODEL_PATH = "Final_model.h5"
 SCALER_PATH = "scaler.pkl"
 
-model = load_model(MODEL_PATH)
+model = tf.keras.models.load_model(MODEL_PATH)
 
 with open(SCALER_PATH, "rb") as f:
     scaler = pickle.load(f)
