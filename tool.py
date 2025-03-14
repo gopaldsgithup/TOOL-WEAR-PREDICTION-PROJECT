@@ -47,7 +47,7 @@ def set_bg_image(image_path):
     """
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-set_bg_image_local(r"12.png")
+set_bg_image(r"12.png")
 
 
 
