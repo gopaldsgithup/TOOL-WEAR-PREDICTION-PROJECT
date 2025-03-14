@@ -42,7 +42,8 @@ def set_bg_image(image_path):
     """
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-set_bg_image(r"C:\Users\Thiruvesh\Desktop\projectcncbackgroundimage.webp.jpg")
+set_bg_image("C:/Users/Thiruvesh/Desktop/projectcncbackgroundimage.webp.jpg")
+
 
 
 # Custom CSS for Sidebar Styling with White, Black, and Blue
