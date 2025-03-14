@@ -42,7 +42,7 @@ def set_bg_image(image_path):
     """
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-set_bg_image("C:\\Users\\Thiruvesh\\Desktop\\projectcncbackgroundimage.webp.jpg")
+set_background_image_local(r"12.png")
 
 
 
