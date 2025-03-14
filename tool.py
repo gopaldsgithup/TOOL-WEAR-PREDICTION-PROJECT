@@ -101,6 +101,7 @@ elif choice == "Prediction":
     input_sequence = np.array([input_scaled] * sequence_length)
     input_sequence = input_sequence.reshape(1, sequence_length, len(selected_columns))
 
+
     if st.sidebar.button("Predict"):
         pred_tool_condition, pred_machining_finalized, pred_visual_inspection = model.predict(input_sequence)
 
